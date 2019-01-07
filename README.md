@@ -1,5 +1,5 @@
 # Soot Tutorial
-This is the tutorial for using Soot and Flowdroid to analyze Java and Android application. Also, it can be served as a template for future projects. Feels free to build up your own project from this template instead of creating from scratch.
+This is the tutorial for using Soot and Flowdroid to analyze Java and Android application. Also, it can be served as a template for future assignments. Feels free to build up your own project from this tutorial instead of creating the project from scratch.
 
 
 ## Prerequisites
