@@ -22,4 +22,6 @@ An example of correctly imported project can be seen here (in Intellij):
 ![alt text](/figures/project.png)
 
 
+## Example
 
+An quick example can be found in the main file ```SootIntroduction.java```, which simply configures necessary options for Soot, load a sample .jar file (located at /resource/js.jar) and print out all of the methods of the main Class.
