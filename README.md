@@ -12,3 +12,4 @@ https://github.com/bdqnghi/Soot-Tutorial/blob/master/lib/soot-3.0.1.jar
 Either using Eclipse and Intellij to import the project and add the soot-3.0.1.jar above in to the class path of the project
 
 An example of correctly imported project can be seen here:
+![alt text](/figures/project.png)
