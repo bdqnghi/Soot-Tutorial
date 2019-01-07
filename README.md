@@ -1,5 +1,5 @@
 # Soot Tutorial
-This is the tutorial for using Soot to analyze Java and Android application.
+This is the tutorial for using Soot and Flowdroid to analyze Java and Android application.
 
 ## Installation
 
