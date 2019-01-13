@@ -16,7 +16,9 @@ since the version is outdated.
 Instead, building the jar from the latest source code is better: https://github.com/Sable/soot. I have prebuilt one version here: 
 https://github.com/bdqnghi/Soot-Tutorial/blob/master/lib/soot-3.0.1.jar. Feels free to use, no need to built from the source code again.
 
-Next step is to import the project and add the soot-3.0.1.jar into the class path of the project
+Next step is to import the project and add the soot-3.0.1.jar into the class path of the project. 
+- To import .jar file in Eclipse, you can refer to: https://stackoverflow.com/a/3280384/2760331 
+- To import .jar file in Intellij, you can refer to: https://stackoverflow.com/a/1051705/2760331
 
 An example of correctly imported project can be seen here (in Intellij):
 ![alt text](/figures/project.png)
