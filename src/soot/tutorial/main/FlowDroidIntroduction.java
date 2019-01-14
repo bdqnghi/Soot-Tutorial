@@ -51,41 +51,6 @@ public class FlowDroidIntroduction {
         PackManager.v().runPacks();
 
         System.out.println("Size of call graph : " + Scene.v().getCallGraph().size());
-
-        CallGraph cg = Scene.v().getCallGraph();
-//
-        DotGraph dot = new DotGraph("callgraph");
-
-
-//      NodeVisitor.visit(dot, cg, entryPoint);
-
-        dot.plot(Constants.OUTPUT_FOLDER.resolve("CallGraph_flappybird" +
-                DotGraph.DOT_EXTENSION).toAbsolutePath().toString());
-
-
-        // Test
-        Iterator<Edge> Edges = cg.iterator();
-        while (Edges.hasNext()) {
-
-            Edge edge = Edges.next();
-            SootMethod sourceMethod = edge.src();
-            System.out.println(edge.getSrc());
-            System.out.println("Name: " + sourceMethod.getName());
-            System.out.println("Active Body: " + sourceMethod.getActiveBody());
-
-            Body body = sourceMethod.retrieveActiveBody();
-            UnitGraph cfg = new ExceptionalUnitGraph(body);
-
-            CFGToDotGraph cfgtodot = new CFGToDotGraph();
-            DotGraph dg = cfgtodot.drawCFG((ExceptionalUnitGraph) cfg);
-
-            dg.plot(Constants.OUTPUT_FOLDER.resolve("CFGMethod" +
-                    DotGraph.DOT_EXTENSION).toAbsolutePath().toString());
-
-//            System.exit(1);
-
-        }
-
     }
 
 }
