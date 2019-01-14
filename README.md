@@ -6,20 +6,13 @@ This is the tutorial for using Soot and Flowdroid to analyze Java and Android ap
 - Intall Java 7 SDK or Java 8 SDK
 - Download an IDE: Eclipse or Intellij
 
-## Soot Installation
+## Installation
 
-The first step is to download the Soot .jar file. 
+My suggestion is not to download Soot and FlowDroid separatedly as it will introduce a lot of inconsistent betwween the versions.
 
-My suggestion is not to download Soot from the official web page: https://www.sable.mcgill.ca/soot/soot_download.html
-since the version is outdated.
+Instead, using the prebuilt soot-infoflow-cmd-jar-with-dependencies.jar, which has been packaged all of the necessary .jar file into one single bundle will make your life easier https://github.com/secure-software-engineering/FlowDroid/releases/download/v2.6.1/soot-infoflow-cmd-jar-with-dependencies.jar, I have downloaded and put it in here: https://github.com/bdqnghi/Soot-Tutorial/blob/master/lib/soot-infoflow-cmd-jar-with-dependencies.jar
 
-Instead, building the jar from the latest source code is better: https://github.com/Sable/soot or taking from the stable prebuilt version here: https://soot-build.cs.uni-paderborn.de/public/origin/develop/soot/soot-develop/build/.
-
-I have downloaded and put the necessary jars file into: https://github.com/bdqnghi/Soot-Tutorial/tree/master/lib
-
-For Soot, there are 2 files: soot-3.0.1-source.jar (contains original source code) and and soot-3.0.1.jar (contains byte code). My suggestion is to import both of them into your project as the soot-3.0.1-source.jar will be necessary if one wants to understand how a function in Soot is implemented.
-
-Next step is to import the project and add the soot-3.0.1.jar into the class path of the project. 
+Next step is to import the project and add the .jar into the class path of the project. 
 - To import .jar file in Eclipse, you can refer to: https://stackoverflow.com/a/3280384/2760331 
 - To import .jar file in Intellij, you can refer to: https://stackoverflow.com/a/1051705/2760331
 
