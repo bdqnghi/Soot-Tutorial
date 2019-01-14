@@ -1,0 +1,15 @@
+digraph "com.dotgears.GameActivity dummyMainMethod_GameActivity(android.content.Intent)" {
+    label="com.dotgears.GameActivity dummyMainMethod_GameActivity(android.content.Intent)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="parameter0 := @parameter0",];
+    "1" [label="goto label1",];
+    "0"->"1" [color=black,];
+    "3" [style=invis,label="Esc",];
+    "0"->"3" [color=lightgray,label="",];
+    "2" [style=filled,fillcolor=lightgray,label="label1: return $r0",];
+    "1"->"2" [color=black,];
+    "4" [style=invis,label="Esc",];
+    "1"->"4" [color=lightgray,label="",];
+    "5" [style=invis,label="Esc",];
+    "2"->"5" [color=lightgray,label="",];
+}
