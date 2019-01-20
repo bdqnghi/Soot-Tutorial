@@ -26,8 +26,8 @@ An example of correctly imported project can be seen here (in Intellij):
 
 ## Examples
 
-I have provided 2 simple examples:
-- ```SootIntroduction.java```
-- ```FlowDroidIntroduction.java```
+I have provided 2 simple examples for either Soot and FlowDroid
+- ```SootIntroduction.java``` : Load a .jar file and analyze using Soot
+- ```FlowDroidIntroduction.java```: Load an .apk file and analyze using FlowDroid
 
 
