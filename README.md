@@ -8,7 +8,7 @@ This is the tutorial for using Soot and Flowdroid to analyze Java and Android ap
 
 ## Installation
 
-My suggestion is not to download Soot and FlowDroid separatedly as it will introduce a lot of inconsistencies betwween the versions.
+My suggestion is not to download Soot and FlowDroid separately as it will introduce a lot of inconsistencies between the versions.
 
 Instead, using the prebuilt soot-infoflow-cmd-jar-with-dependencies.jar, which has been packaged all of the necessary .jar files (soot + flowdroid) into one single bundle, which will make your life easier https://github.com/secure-software-engineering/FlowDroid/releases/download/v2.6.1/soot-infoflow-cmd-jar-with-dependencies.jar.
 
@@ -16,11 +16,11 @@ I have downloaded and put it in here: https://github.com/bdqnghi/Soot-Tutorial/b
 
 Also, for those who want to look into the original source to see how a function is implemented, simply download the source here: https://github.com/secure-software-engineering/FlowDroid/releases/download/v2.6.1/soot-infoflow-cmd-classes-sources.jar and add into the classpath, this step is optional.
 
-Next step is to import the project and add the .jar into the class path of the project. 
+Next step is to import the project and add the .jar into the classpath of the project. 
 - To import .jar file in Eclipse, you can refer to: https://stackoverflow.com/a/3280384/2760331 
 - To import .jar file in Intellij, you can refer to: https://stackoverflow.com/a/1051705/2760331
 
-An example of correctly imported project can be seen here (in Intellij):
+An example of a correctly imported project can be seen here (in Intellij):
 ![alt text](/figures/project.png)
 
 
@@ -28,6 +28,6 @@ An example of correctly imported project can be seen here (in Intellij):
 
 I have provided 2 simple examples for either Soot and FlowDroid
 - ```SootIntroduction.java``` : Load a .jar file and analyze using Soot
-- ```FlowDroidIntroduction.java```: Load an .apk file and analyze using FlowDroid
+- ```FlowDroidIntroduction.java```: Load a .apk file and analyze using FlowDroid
 
 
