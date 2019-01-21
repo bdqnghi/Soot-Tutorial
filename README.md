@@ -14,7 +14,7 @@ Instead, using the prebuilt soot-infoflow-cmd-jar-with-dependencies.jar, which h
 
 I have downloaded and put it in here: https://github.com/bdqnghi/Soot-Tutorial/blob/master/lib/soot-infoflow-cmd-jar-with-dependencies.jar. 
 
-Also, for those who want to look into the original source to see how a function is implemented, simply download the source here: https://github.com/secure-software-engineering/FlowDroid/releases/download/v2.6.1/soot-infoflow-cmd-classes-sources.jar and add into the classpath, this step is optional.
+Also, for those who want to look into the original source to see how a function is implemented, simply download the source here: https://github.com/secure-software-engineering/FlowDroid/releases/download/v2.6.1/soot-infoflow-cmd-classes-sources.jar and add into the classpath (this step is optional).
 
 Next step is to import the project and add the .jar into the classpath of the project. 
 - To import .jar file in Eclipse, you can refer to: https://stackoverflow.com/a/3280384/2760331 
