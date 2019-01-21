@@ -30,4 +30,7 @@ I have provided 2 simple examples for either Soot and FlowDroid
 - ```SootIntroduction.java``` : Load a .jar file and analyze using Soot
 - ```FlowDroidIntroduction.java```: Load a .apk file and analyze using FlowDroid
 
+An example output of Call Graph can be found here: https://github.com/bdqnghi/Soot-Tutorial/blob/master/sootOutput/CFGMethod.dot, which you can copy and paste into this visulalization tool: http://www.webgraphviz.com/
+
+
 
