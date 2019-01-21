@@ -16,7 +16,7 @@ I have downloaded and put it in here: https://github.com/bdqnghi/Soot-Tutorial/b
 
 Also, for those who want to look into the original source to see how a function is implemented, simply download the source here: https://github.com/secure-software-engineering/FlowDroid/releases/download/v2.6.1/soot-infoflow-cmd-classes-sources.jar and add into the classpath (this step is optional).
 
-Next step is to import the project and add the .jar into the classpath of the project. 
+Next step is to import the project into the IDE and add the .jar into the classpath of the project. 
 - To import .jar file in Eclipse, you can refer to: https://stackoverflow.com/a/3280384/2760331 
 - To import .jar file in Intellij, you can refer to: https://stackoverflow.com/a/1051705/2760331
 
