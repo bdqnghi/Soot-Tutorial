@@ -1,0 +1,33 @@
+digraph "java.util.List merge(java.util.List,java.util.List)" {
+    label="java.util.List merge(java.util.List,java.util.List)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="Type: REGION: Begin-----------PDGRegion:  0-------------\nChildren Regions are: 1, 2, \nUnits are: \n$r0 := @this: de.cketti.changelog.MergedChangeLogProvider\n$r2 := @parameter0: java.util.List\n$r3 := @parameter1: java.util.List\n$r1 = new android.util.SparseArray\nspecialinvoke $r1.<android.util.SparseArray: void <init>()>()\n$r4 = interfaceinvoke $r3.<java.util.List: java.util.Iterator iterator()>()\n$z0 = interfaceinvoke $r4.<java.util.Iterator: boolean hasNext()>()\nif $z0 == 0 goto $r7 = new java.util.ArrayList\n$r7 = new java.util.ArrayList\n$i0 = interfaceinvoke $r2.<java.util.List: int size()>()\nspecialinvoke $r7.<java.util.ArrayList: void <init>(int)>($i0)\n$i1 = 0\n$i2 = interfaceinvoke $r2.<java.util.List: int size()>()\nif $i1 >= $i2 goto $r8 = new de.cketti.changelog.MergedChangeLogProvider$VersionCodeComparator\n$r8 = new de.cketti.changelog.MergedChangeLogProvider$VersionCodeComparator\nspecialinvoke $r8.<de.cketti.changelog.MergedChangeLogProvider$VersionCodeComparator: void <init>(de.cketti.changelog.MergedChangeLogProvider)>($r0)\nstaticinvoke <java.util.Collections: void sort(java.util.List,java.util.Comparator)>($r7, $r8)\nreturn $r7\nEnd of PDG Region 0 -----------------------------\n",];
+    "3" [label="Type: REGION: Begin-----------Region:  3-------------\n$z0 = interfaceinvoke $r4.<java.util.Iterator: boolean hasNext()>()\nif $z0 == 0 goto $r7 = new java.util.ArrayList\nEnd Region 3 -----------------------------\n",];
+    "0"->"3";
+    "6" [label="Type: REGION: Begin-----------Region:  4-------------\nif $i1 >= $i2 goto $r8 = new de.cketti.changelog.MergedChangeLogProvider$VersionCodeComparator\nEnd Region 4 -----------------------------\n",];
+    "0"->"6";
+    "8" [style=filled,fillcolor=lightgray,label="Type: CFGNODE: Block 6:\n[preds: 4 ] [succs: ]\n$r8 = new de.cketti.changelog.MergedChangeLogProvider$VersionCodeComparator;\nspecialinvoke $r8.<de.cketti.changelog.MergedChangeLogProvider$VersionCodeComparator: void <init>(de.cketti.changelog.MergedChangeLogProvider)>($r0);\nstaticinvoke <java.util.Collections: void sort(java.util.List,java.util.Comparator)>($r7, $r8);\nreturn $r7;\n",];
+    "0"->"8";
+    "10" [label="Type: CFGNODE: Block 0:\n[preds: ] [succs: 1 ]\n$r0 := @this: de.cketti.changelog.MergedChangeLogProvider;\n$r2 := @parameter0: java.util.List;\n$r3 := @parameter1: java.util.List;\n$r1 = new android.util.SparseArray;\nspecialinvoke $r1.<android.util.SparseArray: void <init>()>();\n$r4 = interfaceinvoke $r3.<java.util.List: java.util.Iterator iterator()>();\n",];
+    "0"->"10";
+    "11" [label="Type: CFGNODE: Block 3:\n[preds: 1 ] [succs: 4 ]\n$r7 = new java.util.ArrayList;\n$i0 = interfaceinvoke $r2.<java.util.List: int size()>();\nspecialinvoke $r7.<java.util.ArrayList: void <init>(int)>($i0);\n$i1 = 0;\n$i2 = interfaceinvoke $r2.<java.util.List: int size()>();\n",];
+    "0"->"11";
+    "1" [style=filled,fillcolor=lightgray,label="Type: CFGNODE: Block 2:\n[preds: 1 ] [succs: 1 ]\n$r5 = interfaceinvoke $r4.<java.util.Iterator: java.lang.Object next()>();\n$r6 = (de.cketti.changelog.ReleaseItem) $r5;\n$i0 = $r6.<de.cketti.changelog.ReleaseItem: int versionCode>;\nvirtualinvoke $r1.<android.util.SparseArray: void put(int,java.lang.Object)>($i0, $r6);\ngoto [?= $z0 = interfaceinvoke $r4.<java.util.Iterator: boolean hasNext()>()];\n",];
+    "2" [label="Type: CFGNODE: Block 4:\n[preds: 3 5 ] [succs: 5 6 ]\nif $i1 >= $i2 goto $r8 = new de.cketti.changelog.MergedChangeLogProvider$VersionCodeComparator;\n",];
+    "4" [label="Type: REGION: Begin-----------PDGRegion:  2-------------\nParent is: 0----\nChildren Regions are: \nUnits are: \n$r5 = interfaceinvoke $r2.<java.util.List: java.lang.Object get(int)>($i1)\n$r6 = (de.cketti.changelog.ReleaseItem) $r5\n$i0 = $r6.<de.cketti.changelog.ReleaseItem: int versionCode>\n$r5 = virtualinvoke $r1.<android.util.SparseArray: java.lang.Object get(int,java.lang.Object)>($i0, $r6)\n$r6 = (de.cketti.changelog.ReleaseItem) $r5\ninterfaceinvoke $r7.<java.util.List: boolean add(java.lang.Object)>($r6)\n$i1 = $i1 + 1\ngoto [?= (branch)]\nEnd of PDG Region 2 -----------------------------\n",];
+    "2"->"4";
+    "2"->"6";
+    "5" [label="Type: CFGNODE: Block 1:\n[preds: 0 2 ] [succs: 2 3 ]\n$z0 = interfaceinvoke $r4.<java.util.Iterator: boolean hasNext()>();\nif $z0 == 0 goto $r7 = new java.util.ArrayList;\n",];
+    "3"->"5";
+    "3"->"11";
+    "9" [style=filled,fillcolor=lightgray,label="Type: CFGNODE: Block 5:\n[preds: 4 ] [succs: 4 ]\n$r5 = interfaceinvoke $r2.<java.util.List: java.lang.Object get(int)>($i1);\n$r6 = (de.cketti.changelog.ReleaseItem) $r5;\n$i0 = $r6.<de.cketti.changelog.ReleaseItem: int versionCode>;\n$r5 = virtualinvoke $r1.<android.util.SparseArray: java.lang.Object get(int,java.lang.Object)>($i0, $r6);\n$r6 = (de.cketti.changelog.ReleaseItem) $r5;\ninterfaceinvoke $r7.<java.util.List: boolean add(java.lang.Object)>($r6);\n$i1 = $i1 + 1;\ngoto [?= (branch)];\n",];
+    "4"->"9";
+    "5"->"3";
+    "7" [label="Type: REGION: Begin-----------PDGRegion:  1-------------\nParent is: 0----\nChildren Regions are: \nUnits are: \n$r5 = interfaceinvoke $r4.<java.util.Iterator: java.lang.Object next()>()\n$r6 = (de.cketti.changelog.ReleaseItem) $r5\n$i0 = $r6.<de.cketti.changelog.ReleaseItem: int versionCode>\nvirtualinvoke $r1.<android.util.SparseArray: void put(int,java.lang.Object)>($i0, $r6)\ngoto [?= $z0 = interfaceinvoke $r4.<java.util.Iterator: boolean hasNext()>()]\nEnd of PDG Region 1 -----------------------------\n",];
+    "5"->"7";
+    "6"->"2";
+    "6"->"8";
+    "7"->"1";
+    "10"->"3";
+    "11"->"6";
+}
