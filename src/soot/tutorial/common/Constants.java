@@ -58,7 +58,7 @@ public class Constants {
 	
 	// Path of resource files
 	public static final Path JAR_FILE = RESOURCE_FOLDER.resolve("js.jar");
-	public static final Path APK_FABRICA_WORDCARD = RESOURCE_FOLDER.resolve("flappybird.apk");
+	public static final Path APK_FABRICA_WORDCARD = RESOURCE_FOLDER.resolve("2048-android.apk");
 	public static final Path APK_SYSTEM_ANDROID_SERVICES = RESOURCE_FRAMEWORK_FOLDER.resolve("services.apk");
 	public static final Path APK_SYSTEM_ANDROID_CORE = RESOURCE_FRAMEWORK_FOLDER.resolve("core.apk");
 	public static final Path APK_SYSTEM_ANDROID_AM = RESOURCE_FRAMEWORK_FOLDER.resolve("am.apk");

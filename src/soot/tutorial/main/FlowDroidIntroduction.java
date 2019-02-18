@@ -37,6 +37,9 @@ public class FlowDroidIntroduction {
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_output_format(Options.output_format_none);
         Options.v().setPhaseOption("cg.spark", "verbose:true");
+
+        PackManager.v().runPacks();
+
         app.constructCallgraph();
         Scene.v().loadNecessaryClasses();
 
@@ -48,7 +51,7 @@ public class FlowDroidIntroduction {
 
         System.out.println("............" + entryPoint.getBytecodeSignature());
 
-        PackManager.v().runPacks();
+
 
         System.out.println("Size of call graph : " + Scene.v().getCallGraph().size());
     }

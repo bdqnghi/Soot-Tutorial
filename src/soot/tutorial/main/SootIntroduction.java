@@ -38,6 +38,7 @@ public class SootIntroduction extends HashMutablePDG {
         // Print out all of the methods in the class
         for(SootMethod method : entryclass.getMethods()){
             System.out.println(method.getName());
+
         }
     }
 }

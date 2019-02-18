@@ -1,4 +1,4 @@
-package soot.tutorial.main;
+package soot.tutorial.lab;
 
 
 import soot.Body;
@@ -11,6 +11,7 @@ import soot.jimple.toolkits.callgraph.Edge;
 import soot.options.Options;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
+import soot.toolkits.graph.pdg.HashMutablePDG;
 import soot.tutorial.common.Constants;
 import soot.tutorial.dotgraph.NodeVisitor;
 import soot.util.cfgcmd.CFGToDotGraph;
@@ -80,9 +81,13 @@ public class Lab1SampleSolution {
             dg.plot(Constants.OUTPUT_FOLDER.resolve("CFGMethod" +
                     DotGraph.DOT_EXTENSION).toAbsolutePath().toString());
 
-            System.exit(1);
+//            System.exit(1);
+            HashMutablePDG hpdg=new HashMutablePDG(cfg);
+            DotGraph pdg=cfgtodot.drawCFG(hpdg,body);
 
+            pdg.plot(Constants.OUTPUT_FOLDER.resolve("PDGMethodJar" +
+                    DotGraph.DOT_EXTENSION).toAbsolutePath().toString());
         }
     }
-    
+
 }
