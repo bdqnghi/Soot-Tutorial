@@ -3,7 +3,7 @@ This is the tutorial for using Soot and Flowdroid to analyze Java and Android ap
 
 
 ## Prerequisites
-- Intall Java 7 SDK or Java 8 SDK
+- Intall Java 7 JDK or Java 8 JDK
 - Download an IDE: Eclipse or Intellij
 
 ## Installation
